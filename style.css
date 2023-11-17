@@ -27,7 +27,6 @@ header {
 }
 
 #hero {
-    position: absolute;
-    left: 10%;
-    top: 30%;
+padding-top: 5%;
+padding-left: 5%;
 }
