@@ -1,1 +1,32 @@
 
+nav img {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    background-color: #141414;
+    font-size: 20px;
+
+}
+
+
+nav ul li {
+    padding-left: 20px;
+}
+
+#navbarNavDropdown {
+    padding-left: 50px; 
+}
+
+header {
+    background-image: url("img/hero.png");
+    background-size: cover;
+    color: white;
+
+}
+
+#hero {
+padding-top: 5%;
+padding-left: 5%;
+}
