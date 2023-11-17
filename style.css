@@ -1,1 +1,11 @@
+header {
+    background-image: url("img/jett.png");
+    background-size: cover;
+    color: white;
+}
 
+#hero {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
