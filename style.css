@@ -23,10 +23,24 @@ header {
     background-image: url("img/hero.webp");
     background-size: cover;
     color: white;
+    height: 850px;
+   
 
 }
 
 #hero {
 padding-top: 5%;
 padding-left: 5%;
+}
+
+p{
+    margin-bottom: 100px;
+}
+
+#lastp {
+    margin-bottom: 50px;
+}
+
+footer {
+    width: 100%;
 }
