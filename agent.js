@@ -8,9 +8,15 @@ fetch(url, fetchOptions)
         let results = dataJSON.data;
         let txt = ''
         for (agent of results) {
-            txt += `<section id="${agent.displayName}"><p> ${agent.displayName}</p>
+            txt += `<section id="${agent.displayName}">
+            <div id="left">
+            <h3> ${agent.displayName}</h3>
             <img src="${agent.fullPortrait
-                }"></section>`
+                }"> </div> <div id="right">
+                <p> ${agent.description}</p>
+                <p> ${agent.role.displayName}</p>
+                <div id="abilitie"><img src="${agent.abilities[0].displayIcon}"></div>
+                </div>"</section>`
             //Afficher agents
             document.getElementById('agents').innerHTML = txt
         }
@@ -18,3 +24,4 @@ fetch(url, fetchOptions)
     .catch((error) => {
         console.log(error) // gestion des erreurs
     })
+
