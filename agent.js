@@ -14,7 +14,7 @@ fetch(url, fetchOptions)
             // Utiliser une classe pour inverser l'ordre des éléments "left" et "right" alternativement
             const orderClass = i % 2 === 0 ? 'order-left' : 'order-right';
 
-            txt += `<section class="d-flex flex-row ${orderClass}" id="${agent.displayName}">
+            txt += `<section class="d-flex ${orderClass}" id="${agent.displayName}">
             <div class="bg-primary text-white col-4" id="left">
             <h3 class="d-flex justify-content-center"><strong>${agent.displayName}</strong></h3>
             <img class="img-fluid" id="portrait" src="${agent.fullPortrait}"> </div> 
