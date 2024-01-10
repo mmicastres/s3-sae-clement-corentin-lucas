@@ -52,4 +52,9 @@ footer {
 .filter {
     -webkit-filter: brightness(1) invert(1);
     filter: brightness(1) invert(1);
-  }
+}
+
+#right{
+    padding-left: 5%;
+    padding-right: 5%;
+}

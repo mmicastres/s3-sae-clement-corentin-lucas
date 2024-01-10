@@ -14,10 +14,10 @@ fetch(url, fetchOptions)
             <img class="img-fluid" id="portrait" src="${agent.fullPortrait
                 }"> </div> <div class="col-8 d-flex align-items-center" id="right">
                 <div class="d-flex flex-column">
-                <p class="text-start"> ${agent.description}</p>
-                <p> ${agent.role.displayName}</p>
+                <p class="text-start mb-3"> ${agent.description}</p>
+                <p class="mb-3"><strong> ${agent.role.displayName}</strong></p>
                 <div id="abilitie" class="d-flex flex-row"><img class="img-fluid filter mx-4" id="abilitie" src="${agent.abilities[0].displayIcon}"><img class="img-fluid filter mx-4" id="abilitie" src="${agent.abilities[1].displayIcon}"><img class="img-fluid filter mx-4" id="abilitie" src="${agent.abilities[2].displayIcon}"><img class="img-fluid filter mx-4" id="abilitie" src="${agent.abilities[3].displayIcon}"></div>
-                <div></div>"</section>`
+                <div></div></section>`
             //Afficher agents
             document.getElementById('agents').innerHTML = txt
         }
