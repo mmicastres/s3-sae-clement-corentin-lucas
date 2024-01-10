@@ -33,7 +33,7 @@ padding-top: 5%;
 padding-left: 5%;
 }
 
-p{
+header p{
     margin-bottom: 100px;
 }
 
@@ -43,4 +43,19 @@ p{
 
 footer {
     width: 100%;
+    background-color: #141414;
+    
+    color: white !important;
+}
+
+#foot {
+    padding: 0px !important;
+}
+
+footer ul li a{
+    color: white !important;
+}
+
+#timeline {
+    background-color: #141414;
 }
