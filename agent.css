@@ -1,6 +1,9 @@
 body {
     margin: 0%;
     padding: 0%;
+    background-image: url(img/background_linered);
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 nav img {
@@ -36,12 +39,12 @@ footer {
 }
 
 #portrait {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
 .bg-primary {
-    background-color: #FD4556 !important;
+    background-image: url(img/background_agent.png);
 }
 
 #abilitie {
@@ -55,8 +58,22 @@ footer {
 }
 
 #right{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#role_agent{
+    max-width: 50%;
+}
+
+#description {
+    text-align : justify;
+    white-space: normal;
+}
+
+.condensed-description {
+    max-width: 400px; /* Ajustez la valeur selon vos besoins */
+    word-wrap: break-word;
 }
 
 .order-left {
