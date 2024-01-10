@@ -58,3 +58,11 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
 }
+
+.order-left {
+    flex-direction: row-reverse; /* Inverse l'ordre des éléments pour afficher "left" à droite */
+}
+
+.order-right {
+    flex-direction: row; /* Garde l'ordre normal des éléments */
+}

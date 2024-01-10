@@ -10,16 +10,15 @@ fetch(url, fetchOptions)
         let txt = '';
         for (let i = 0; i < results.length; i++) {
             const agent = results[i];
-            const isEven = i % 2 === 0;
 
-            // Inverser l'ordre des éléments "left" et "right" alternativement
-            const leftOrRight = isEven ? 'left' : 'right';
+            // Utiliser une classe pour inverser l'ordre des éléments "left" et "right" alternativement
+            const orderClass = i % 2 === 0 ? 'order-left' : 'order-right';
 
-            txt += `<section class="d-flex flex-row" id="${agent.displayName}">
-            <div class="bg-primary text-white col-4" id="${leftOrRight}">
+            txt += `<section class="d-flex flex-row ${orderClass}" id="${agent.displayName}">
+            <div class="bg-primary text-white col-4" id="left">
             <h3 class="d-flex justify-content-center"><strong>${agent.displayName}</strong></h3>
             <img class="img-fluid" id="portrait" src="${agent.fullPortrait}"> </div> 
-            <div class="col-8 d-flex align-items-center" id="${isEven ? 'right' : 'left'}">
+            <div class="col-8 d-flex align-items-center" id="right">
                 <div class="d-flex flex-column">
                 <p class="text-start mb-4"> ${agent.description}</p>
                 <p class="mb-4"><strong> ${agent.role.displayName}</strong></p>
@@ -38,7 +37,6 @@ fetch(url, fetchOptions)
     .catch((error) => {
         console.log(error); // gestion des erreurs
     });
-
 // executer la req AJAX
 fetch(url, fetchOptions)
     .then((response) => { return response.json() })
