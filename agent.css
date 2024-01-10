@@ -1,0 +1,55 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    background-color: #141414;
+    font-size: 20px;
+
+}
+
+
+nav ul li {
+    padding-left: 20px;
+}
+
+#navbarNavDropdown {
+    padding-left: 50px;
+}
+
+p {
+    margin-bottom: 100px;
+}
+
+#lastp {
+    margin-bottom: 50px;
+}
+
+footer {
+    width: 100%;
+}
+
+#portrait {
+    width: 80%;
+    height: auto;
+}
+
+.bg-primary {
+    background-color: #FD4556 !important;
+}
+
+#abilitie {
+    width: 20%;
+    height: auto;
+}
+
+.filter {
+    -webkit-filter: brightness(1) invert(1);
+    filter: brightness(1) invert(1);
+  }
