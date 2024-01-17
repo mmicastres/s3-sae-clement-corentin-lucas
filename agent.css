@@ -57,16 +57,16 @@ footer {
     filter: brightness(1) invert(1);
 }
 
-#middle{
+#middle {
     margin-left: 10%;
 }
 
-#role_agent{
+#role_agent {
     max-width: 50%;
 }
 
 #description {
-    text-align : justify;
+    text-align: justify;
     white-space: normal;
 }
 
@@ -76,11 +76,13 @@ footer {
 }
 
 .order-left {
-    flex-direction: row-reverse; /* Inverse l'ordre des éléments pour afficher "left" à droite */
+    flex-direction: row-reverse;
+    /* Inverse l'ordre des éléments pour afficher "left" à droite */
 }
 
 .order-right {
-    flex-direction: row; /* Garde l'ordre normal des éléments */
+    flex-direction: row;
+    /* Garde l'ordre normal des éléments */
 }
 
 .hidden {
@@ -89,4 +91,39 @@ footer {
 
 .visible {
     display: block;
+}
+
+/* Style pour le select non ouvert */
+.filtre {
+    background-color: #FD4556;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 0;
+}
+
+.filtre:hover {
+    background-color: #e43143;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    border-radius: 0;
+}
+
+/* Style pour les options du select */
+.filtre option {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.filterbox {
+    margin-left: 2%;
+    margin-right: 2%;
 }

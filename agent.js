@@ -14,7 +14,7 @@ fetch(url, fetchOptions)
             // Utiliser une classe pour inverser l'ordre des éléments "left" et "right" alternativement
             const orderClass = i % 2 === 0 ? 'order-left' : 'order-right';
 
-            txt += `<section id="${agent.sexe}"class="agent visible"><section class="d-flex ${orderClass}" id="${agent.displayName}">
+            txt += `<section id="${agent.sexe}"class="${agent.role.displayName} visible"><section class="d-flex ${orderClass}" id="${agent.displayName}">
             <div class="bg-primary text-white col-3" id="left">
             <h3 class="d-flex justify-content-center"><strong>${agent.displayName}</strong></h3>
             <img class="img-fluid" id="portrait" src="${agent.fullPortrait}"> </div>
@@ -56,14 +56,20 @@ fetch(url, fetchOptions)
     .catch(error => console.error('Erreur lors de la récupération du fichier JSON:', error));
 
 //filtrage par sexe et/ou role
-function filterAgents(sexeFilter) {
+function filterAgents() {
+    const sexeFilter = document.getElementById('sexeFilter').value;
+    const roleFilter = document.getElementById('roleFilter').value;
+
     const agents = document.getElementById('agents').children;
 
     for (let i = 0; i < agents.length; i++) {
         const agent = agents[i];
 
-        // Vérifiez si le sexe de l'agent correspond au filtre
-        if (sexeFilter === 'Tous' || agent.id === sexeFilter) {
+        // Vérifie si le sexe et le rôle de l'agent correspondent aux filtres
+        const sexeMatch = sexeFilter === 'Tous' || agent.id === sexeFilter;
+        const roleMatch = roleFilter === 'Tous' || agent.classList.contains(roleFilter);
+
+        if (sexeMatch && roleMatch) {
             agent.classList.remove('hidden');
             agent.classList.add('visible');
         } else {
@@ -74,5 +80,4 @@ function filterAgents(sexeFilter) {
 }
 
 // Appel initial pour afficher tous les agents
-filterAgents('Tous');
-
+filterAgents();
