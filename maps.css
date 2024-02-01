@@ -1,4 +1,3 @@
-
 nav img {
     width: 100px;
     height: 100px;
@@ -16,11 +15,115 @@ nav ul li {
 }
 
 #navbarNavDropdown {
-    padding-left: 50px; 
+    padding-left: 50px;
 }
 
+#button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+}
 
-p{
+.button {
+    background: #fd4556;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    min-width: 150px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #f5f5f5;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.button::after {
+    font-family: sans-serif;
+    content: "▼";
+    padding-left: 0.5em;
+}
+
+.filters:not(.filters--active) {
+    display: none;
+}
+
+.filters {
+    width: 200px;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+    padding: 1.5em;
+    position: absolute;
+    top: 42px;
+    z-index: 100;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  /* 9 */
+.btn-9 {
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  .btn-9:after {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background-color: #141414;
+  background-image: linear-gradient(315deg, #141414 26%, #fd4556 74%);
+    transition: all 0.3s ease;
+  }
+  .btn-9:hover {
+    background: transparent;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    color: #fff;
+  }
+  .btn-9:hover:after {
+    -webkit-transform: scale(2) rotate(180deg);
+    transform: scale(2) rotate(180deg);
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.5),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
     margin-bottom: 100px;
 }
 
