@@ -123,14 +123,23 @@ ul {
     padding: 0px;
 }
 
-p {
-    margin-bottom: 100px;
-}
-
-#lastp {
-    margin-bottom: 50px;
-}
 
 footer {
     width: 100%;
+    background-color: #141414;
+    padding-top: 20px;
+    color: white !important;
+}
+
+#foot {
+    padding: 0px !important;
+    margin-top: 30px;
+}
+
+footer ul li a{
+    color: white !important;
+}
+
+#timeline {
+    background-color: #141414;
 }

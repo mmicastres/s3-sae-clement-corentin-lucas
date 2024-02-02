@@ -26,17 +26,6 @@ nav ul li {
     padding-left: 50px;
 }
 
-p {
-    margin-bottom: 100px;
-}
-
-#lastp {
-    margin-bottom: 50px;
-}
-
-footer {
-    width: 100%;
-}
 
 #portrait {
     width: 100%;
@@ -95,25 +84,37 @@ footer {
 
 /* Style pour le select non ouvert */
 .filtre {
-    background-color: #FD4556;
-    color: white;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
+    background: #fd4556;
+    padding: 1em 2em;
     text-transform: uppercase;
-    outline: none;
-    border-radius: 0;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    min-width: 150px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #f5f5f5;
+    cursor: pointer;
+    z-index: 99;
 }
 
 .filtre:hover {
-    background-color: #e43143;
-    color: white;
-    padding: 5px;
-    border: none;
-    cursor: pointer;
+    background: #fd4556;
+    padding: 1em 2em;
     text-transform: uppercase;
-    outline: none;
-    border-radius: 0;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    min-width: 150px;
+    display: inline-flex;
+    justify-content: space-between;
+    color: #f5f5f5;
+    cursor: pointer;
+    z-index: 99;
 }
 
 /* Style pour les options du select */
@@ -126,4 +127,23 @@ footer {
 .filterbox {
     margin-left: 2%;
     margin-right: 2%;
+}
+
+footer {
+    width: 100%;
+    background-color: #141414;
+    padding-top: 20px;
+    color: white !important;
+}
+
+#foot {
+    padding: 0px !important;
+}
+
+footer ul li a{
+    color: white !important;
+}
+
+#timeline {
+    background-color: #141414;
 }

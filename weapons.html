@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +15,13 @@
     <link rel="stylesheet" href="weapons.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg text-white" id="nav">
         <div class="container">
             <a class="navbar-brand" href="#top"><img src="img/logo.png" alt="logo valorant"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse container-fluid" id="navbarNavDropdown">
@@ -28,14 +29,8 @@
                     <li class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="index.html">Accueil</a>
                     </li>
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link text-light " href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Agents
-                        </a>
-                        <ul class="dropdown-menu" id="agentmenu">
-                            <!-- Liens des agents ici -->
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="agent.html">Agents</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="maps.html">Maps</a>
@@ -60,6 +55,19 @@
         <canvas id="visu" width="1000" height="1000"></canvas>
     </div>
 
+    <div class="container-fluid" id="foot">
+        <footer class="pb-3">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Accueil</a></li>
+                <li class="nav-item"><a href="agent.html" class="nav-link px-2 text-light">Agents</a></li>
+                <li class="nav-item"><a href="maps.html" class="nav-link px-2 text-light">Maps</a></li>
+                <li class="nav-item"><a href="#top" class="nav-link px-2 text-light">Armes</a></li>
+            </ul>
+            <p class="text-center text-light">© 2024 LORIEAU, BOUSTENS, RIVIERES, Inc</p>
+        </footer>
+    </div>
+
     <script src="weapons.js"></script>
 </body>
+
 </html>

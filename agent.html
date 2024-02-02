@@ -36,40 +36,40 @@
             </ul>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="maps.html">Maps</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" aria-current="page" href="weapons.html">Armes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 
-                        <li class="nav-item">
-                            <a class="nav-link text-light" aria-current="page" href="maps.html">Maps</a>
-                        </li>
-
-                        <li class="nav-item">
-                          <a class="nav-link text-light" aria-current="page" href="weapons.html">Armes</a>
-                      </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-    
 
   <section id="filtrage" class="d-flex flex-row justify-content-center">
     <div class="filterbox">
-    <select id="sexeFilter" class="selectpicker filtre" onchange="filterAgents(this.value)">
-      <option value="Tous" disabled selected>Filtrer par sexe</option>
-      <option value="Tous">Tous</option>
-      <option value="M">Masculin</option>
-      <option value="F">Féminin</option>
-    </select></div>
+      <select id="sexeFilter" class="selectpicker filtre" onchange="filterAgents(this.value)">
+        <option value="Tous" disabled selected>Filtrer par genre</option>
+        <option value="Tous">Tous</option>
+        <option value="M">Masculin</option>
+        <option value="F">Féminin</option>
+      </select>
+    </div>
 
     <div class="filterbox">
-    <select id="roleFilter" class="selectpicker filtre" onchange="filterAgents()">
-      <option value="Tous" disabled selected>Filtrer par rôle</option>
-      <option value="Tous">Tous</option>
-      <option value="Initiator">Initiator</option>
-      <option value="Sentinel">Sentinel</option>
-      <option value="Duelist">Duelist</option>
-      <option value="Controller">Controller</option>
-    </select></div>
+      <select id="roleFilter" class="selectpicker filtre" onchange="filterAgents()">
+        <option value="Tous" disabled selected>Filtrer par rôle</option>
+        <option value="Tous">Tous</option>
+        <option value="Initiator">Initiator</option>
+        <option value="Sentinel">Sentinel</option>
+        <option value="Duelist">Duelist</option>
+        <option value="Controller">Controller</option>
+      </select>
+    </div>
   </section>
 
 
@@ -80,47 +80,17 @@
 
   </section>
 
-
-  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-    <div class="col mb-2">
-      <a href="#top" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-
-      </a>
-      <p class="text-muted">Corentin Rivières, Lucas Boustens, Clément Lorieau © 2023</p>
-    </div>
-
-    <div class="col mb-2">
-
-    </div>
-
-    <div class="col mb-2">
-      <h5>Liens Utiles</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mentions Légales</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politique de confidentialité</a></li>
+  <div class="container-fluid" id="foot">
+    <footer class="pb-3">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-light">Accueil</a></li>
+        <li class="nav-item"><a href="#top" class="nav-link px-2 text-light">Agents</a></li>
+        <li class="nav-item"><a href="maps.html" class="nav-link px-2 text-light">Maps</a></li>
+        <li class="nav-item"><a href="weapons.html" class="nav-link px-2 text-light">Armes</a></li>
       </ul>
-    </div>
-
-    <div class="col mb-2">
-      <h5></h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#top" class="nav-link p-0 text-muted">Accueil</a></li>
-        <li class="nav-item mb-2"><a href="#agents" class="nav-link p-0 text-muted">Agents</a></li>
-        <li class="nav-item mb-2"><a href="maps.html" class="nav-link p-0 text-muted">Maps</a></li>
-      </ul>
-    </div>
-
-    <div class="col mb-2">
-      <h5>Section</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Accueil</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-      </ul>
-    </div>
-  </footer>
+      <p class="text-center text-light">© 2024 LORIEAU, BOUSTENS, RIVIERES, Inc</p>
+    </footer>
+  </div>
 
   <script src="agent.js" defer></script>
   <script src="val.js" defer></script>
